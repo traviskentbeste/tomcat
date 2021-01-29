@@ -15,7 +15,12 @@ the .jks files needed for tomcat configuration.
 # SSL setup
 >certbot-auto certonly -d &lt;HOSTNAME&gt;
 
-This will prompt you to 
+This will prompt you if you want to install via:
+ * apache plugin
+ * temporary webserver
+ * webroot (file place in your directory structure that is accessable)
+
+It then installs the details in `/etc/letsencrypt/live/<HOSTNAME>`
 
 # Apache Config
 ```
