@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>tomcat</title>
+    <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+</head>
+<body>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-6">
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${username}"></td>
+                    <td th:text="${password}"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <a class="btn btn-primary" th:href="@{/login}">login</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

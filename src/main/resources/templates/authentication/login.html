@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>tomcat</title>
+    <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+</head>
+<body>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-6">
+
+            <form th:action="@{/login}" method="post">
+
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text" placeholder="username" name="username" id="username" class="form-control" value="travis">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" placeholder="password" name="password" id="password" class="form-control" value="temp1234">
+                </div>
+
+                <button class="btn btn-primary" type="submit">login</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
